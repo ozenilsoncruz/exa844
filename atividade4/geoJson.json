@@ -1,0 +1,33 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.758976,
+                    -12.4000767
+                ]
+            },
+            "properties": {
+                "nome": "Posto Larco",
+                "tipo": "fuel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.7597464,
+                    -12.3999473
+                ]
+            },
+            "properties": {
+                "nome": "Rei da Pamonha",
+                "tipo": "restaurant"
+            }
+        }
+    ]
+}

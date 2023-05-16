@@ -1,0 +1,42 @@
+.esqcima, .dircima, .esqbaixo, .dirbaixo{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;  
+}
+
+.esqcima{
+    background-color: red;  
+    top: 0;
+    left: 0;
+}
+
+.dircima{
+    background-color: yellow;
+    top: 0;
+    right: 0;
+} 
+
+.esqbaixo{
+    background-color: green;
+    bottom: 0;
+    left: 0;
+} 
+
+.dirbaixo{
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .esqcima, .esqbaixo, .dircima, .dirbaixo {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+

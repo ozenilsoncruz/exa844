@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contador com campo escondido e cookies</title>
+  </head>
+  <body align="center">
+    {% if nome %}
+      <p>Bem-vindo, {{ nome }}!</p>
+      <p>Tempo restante da sessão: {{tempo}}</p>
+    {% else %}
+      <p>Por favor, informe seu nome:</p>
+    {% endif %}
+    <form method="POST">
+      <input type="text" name="nome" value="{{ nome }}">
+      <input type="submit" value="Enviar">
+      {% if nome %}
+      <input type="hidden" name="nome_anterior" value="{{ nome }}">
+      {% endif %}
+    </form>
+    <br/><br/>
+    Contador escondido: {{ contador_escondido }} <br/>
+    Contador COOKIES: {{ contador_cookies }} <br/>
+    <form action="/" method="GET">
+      <input type="hidden" name="counter" value="{{ contador_escondido }}">
+      <input type="submit" value="Enviar" placeholder="Contador">
+    </form>
+    <br />
+  </body>
+</html>
